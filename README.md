@@ -1,44 +1,49 @@
-# abousidikou.github.io
+# READMe
 
 # Install jekyll
-bash```
+
+```bash
 sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
+
 Évitez d'installer les packages RubyGems (appelés gems) en tant qu'utilisateur root. Au lieu de cela, configurez un répertoire d'installation de gem pour votre compte d'utilisateur. Les commandes suivantes ajouteront des variables d'environnement à votre fichier ~/.bashrc pour configurer le chemin d'installation du gem :
 
-bash```
+```bash
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
+
+
 Install jekyll
-bash```
+```bash
 gem install jekyll bundler
 ```
 
 To verify 
-bash```
+```bash
 jekyll -v
 ```
+
 # Clonage
-bash```
+```bash
 git clone https://github.com/Abousidikou/abousidikou.github.io
 ```
 # Entrer dans le repertoire
-bash```
+```bash
 cd abousidikou.github.io
 ```
 
 # Config email
-bash```
+```bash
 git condig user.email 'votre email'
 ```
 
 # Create files
 Creer un fichier par article dans `_posts` avec le format  `annee-mois-jour-titre.md`
 Ajouter le 'front-matter'
-bash```
+```bash
 ---
 layout: post
 title:  "Posts!!"
@@ -51,15 +56,15 @@ permalink: /:categories/:year/:month
 Le fichier peut être éditer en markown.
 
 # Building and serving jekyll
-bash```
+```bash
 bundle exec jekyll build
 bundle exec jekyll serve
 ```
 
-# La page peut être vu avec l'addresse générée par jekyll serve. (Ex: 127.0.0.1:4000)
+La page peut être vu avec l'addresse générée par jekyll serve. (Ex: 127.0.0.1:4000)
 
 # Git pushing
-bash```
+```bash
 git add .
 git commit -m 'article ajouté'
 git push
