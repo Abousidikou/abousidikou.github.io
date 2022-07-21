@@ -58,4 +58,4 @@ git commit -m 'article ajouté'
 git push
 ```
 
-Attendre un moment puis aller sur [abousidikou.github.io](abousidikou.github.io)
+Attendre un moment puis aller sur [abousidikou.github.io](https://abousidikou.github.io)
