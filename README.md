@@ -52,7 +52,7 @@ categories: index
 permalink: /:categories/:year/:month
 ---
 ```
-
+(Vous écrivez l'article ici)
 Le fichier peut être éditer en markown.
 
 # Building and serving jekyll
