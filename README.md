@@ -3,10 +3,17 @@
 # Install jekyll
 bash```
 sudo apt-get install ruby-full build-essential zlib1g-dev
+```
+Évitez d'installer les packages RubyGems (appelés gems) en tant qu'utilisateur root. Au lieu de cela, configurez un répertoire d'installation de gem pour votre compte d'utilisateur. Les commandes suivantes ajouteront des variables d'environnement à votre fichier ~/.bashrc pour configurer le chemin d'installation du gem :
+
+bash```
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
+```
+Install jekyll
+bash```
 gem install jekyll bundler
 ```
 
